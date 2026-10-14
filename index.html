@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Anahata | Ana Castillo – Instructora de Autogestión Mental y Sutil</title>
+  <meta name="description"
+    content="Centro Anahata en Villa Alemana y Online. Soberanía Humana, Biodecodificación, Visión Remota y Percepción Cuántica Avanzada por Ana Castillo. Enfoque analítico y quirúrgico.">
+  <link rel="icon" type="image/jpeg" href="./assets/logo-anahata.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Configuration Inline -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'anahata-cream': '#FAF8F4',
+            'anahata-surface': '#FFFFFF',
+            'anahata-forest': '#1C3325',
+            'anahata-sage': '#506E59',
+            'anahata-sand': '#C2A87E',
+            'anahata-dark': '#0E1B13',
+            'anahata-dark-card': '#16281E',
+            'anahata-emerald': '#4E8752',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'subtle': '0 8px 30px rgba(28, 51, 37, 0.06)',
+            'subtle-dark': '0 8px 30px rgba(0, 0, 0, 0.35)',
+            'glow-sand': '0 0 35px rgba(194, 168, 126, 0.25)',
+            'glow-emerald': '0 0 35px rgba(78, 135, 82, 0.28)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Estilos personalizados para efectos sutiles y transiciones */
+    ::selection {
+      background-color: #C2A87E;
+      color: #1C3325;
+    }
+
+    .dark ::selection {
+      background-color: #4E8752;
+      color: #FAF8F4;
+    }
+
+    /* Scrollbar estilizada */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #FAF8F4;
+    }
+
+    .dark ::webkit-scrollbar-track {
+      background: #0E1B13;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #C2A87E;
+      border-radius: 4px;
+    }
+
+    .dark ::webkit-scrollbar-thumb {
+      background: #506E59;
+    }
+
+    /* Pulso suave */
+    @keyframes subtlePulse {
+
+      0%,
+      100% {
+        opacity: 0.8;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.03);
+      }
+    }
+
+    .animate-subtle-pulse {
+      animation: subtlePulse 3s infinite ease-in-out;
+    }
+
+    /* Trazo decorativo sutil */
+    .pattern-grid {
+      background-size: 32px 32px;
+      background-image: linear-gradient(to right, rgba(80, 110, 89, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(80, 110, 89, 0.05) 1px, transparent 1px);
+    }
+
+    .dark .pattern-grid {
+      background-image: linear-gradient(to right, rgba(78, 135, 82, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(78, 135, 82, 0.07) 1px, transparent 1px);
+    }
+  </style>
+
+  <!-- Script de tema temprano para evitar flash indeseado (Default: Modo Claro) -->
+  <script>
+      (function () {
+        const savedTheme = localStorage.getItem('anahata-theme');
+        if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+  </script>
+</head>
+
+<body
+  class="bg-anahata-cream text-anahata-forest dark:bg-anahata-dark dark:text-anahata-cream transition-colors duration-300 font-sans antialiased min-h-screen relative overflow-x-hidden pattern-grid">
+
+  <!-- ========================================================= -->
+  <!-- 1. HEADER / NAVBAR FIJA CON BACKDROP-BLUR                 -->
+  <!-- ========================================================= -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-anahata-cream/85 dark:bg-anahata-dark/85 backdrop-blur-md border-b border-anahata-forest/10 dark:border-anahata-emerald/15 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo de Marca e Identidad -->
+        <a href="#inicio" class="flex items-center gap-3.5 group">
+          <div
+            class="relative w-12 h-12 rounded-full overflow-hidden border border-anahata-sand/40 dark:border-anahata-emerald/40 shadow-sm group-hover:scale-105 transition-transform duration-300">
+            <img src="./assets/logo-anahata.jpg" alt="Logo Centro Anahata" class="w-full h-full object-cover">
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-anahata-forest dark:text-anahata-cream leading-tight">
+              Centro Anahata
+            </span>
+            <span class="text-xs uppercase tracking-widest text-anahata-sage dark:text-anahata-sand font-medium">
+              Ana Castillo
+            </span>
+          </div>
+        </a>
+
+        <!-- Menú de Navegación Desktop -->
+        <nav class="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-medium">
+          <a href="#inicio" class="hover:text-anahata-sand dark:hover:text-anahata-emerald transition-colors">Inicio</a>
+          <a href="#habilidades"
+            class="hover:text-anahata-sand dark:hover:text-anahata-emerald transition-colors">Habilidades</a>
+          <a href="#formacion"
+            class="hover:text-anahata-sand dark:hover:text-anahata-emerald transition-colors">Formación</a>
+          <a href="#filosofia"
+            class="hover:text-anahata-sand dark:hover:text-anahata-emerald transition-colors">Enfoque</a>
+          <a href="#programas"
+            class="hover:text-anahata-sand dark:hover:text-anahata-emerald transition-colors">Programas</a>
+          <a href="#fechas"
+            class="hover:text-anahata-sand dark:hover:text-anahata-emerald transition-colors flex items-center gap-1.5">
+            <span>Fechas & En Vivo</span>
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+          </a>
+          <a href="#espacio"
+            class="hover:text-anahata-sand dark:hover:text-anahata-emerald transition-colors">Espacio</a>
+        </nav>
+
+        <!-- Acciones: Switch de Tema, TikTok y Botón WhatsApp -->
+        <div class="flex items-center gap-2.5 sm:gap-3">
+
+          <!-- Botón Directo TikTok -->
+          <a href="https://www.tiktok.com/@centro_anahata?lang=es" target="_blank" rel="noopener noreferrer"
+            aria-label="Canal oficial de TikTok @centro_anahata"
+            class="p-2 sm:p-2.5 rounded-full border border-anahata-forest/15 dark:border-anahata-emerald/30 bg-anahata-surface dark:bg-anahata-dark-card text-anahata-forest dark:text-anahata-sand hover:text-[#EE1D52] dark:hover:text-[#69C9D0] hover:scale-105 active:scale-95 transition-all shadow-sm flex items-center justify-center group"
+            title="TikTok: @centro_anahata (Transmisiones en Vivo)">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.46V12.9a8.16 8.16 0 0 0 5.73 2.29V11.7a4.84 4.84 0 0 1-3.77-1.78 4.82 4.82 0 0 1-1.23-3.23h5v-.01z" />
+            </svg>
+          </a>
+
+          <!-- Selector Modo Claro / Oscuro -->
+          <button id="theme-toggle" type="button" aria-label="Cambiar modo de luz"
+            class="p-2 sm:p-2.5 rounded-full border border-anahata-forest/15 dark:border-anahata-emerald/30 bg-anahata-surface dark:bg-anahata-dark-card text-anahata-forest dark:text-anahata-sand hover:scale-105 active:scale-95 transition-all shadow-sm">
+            <!-- Icono Sol (se muestra en modo oscuro para volver a claro) -->
+            <i id="theme-icon-sun" data-lucide="sun" class="w-4 h-4 sm:w-5 sm:h-5 hidden"></i>
+            <!-- Icono Luna (se muestra en modo claro para ir a oscuro) -->
+            <i id="theme-icon-moon" data-lucide="moon" class="w-4 h-4 sm:w-5 sm:h-5 block"></i>
+          </button>
+
+          <!-- Botón Directo WhatsApp Desktop -->
+          <a href="https://wa.me/56987709985?text=Hola%20Ana,%20me%20gustaría%20recibir%20información%20sobre%20tus%20sesiones%20y%20entrenamientos%20en%20Centro%20Anahata"
+            target="_blank" rel="noopener noreferrer"
+            class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-anahata-forest text-anahata-cream hover:bg-anahata-sage dark:bg-anahata-emerald dark:text-anahata-dark dark:hover:bg-anahata-sand transition-all duration-300 shadow-sm hover:shadow-md">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Escribir al WhatsApp</span>
+          </a>
+
+          <!-- Botón Menú Mobile -->
+          <button id="mobile-menu-btn" type="button" aria-label="Abrir menú"
+            class="md:hidden p-2 rounded-lg text-anahata-forest dark:text-anahata-cream hover:bg-anahata-forest/5 dark:hover:bg-anahata-emerald/10">
+            <i id="mobile-menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Mobile -->
+    <div id="mobile-menu"
+      class="hidden md:hidden border-t border-anahata-forest/10 dark:border-anahata-emerald/15 bg-anahata-cream dark:bg-anahata-dark px-4 pt-3 pb-6 space-y-3">
+      <a href="#inicio"
+        class="mobile-nav-link block py-2 text-base font-medium hover:text-anahata-sand dark:hover:text-anahata-emerald">Inicio</a>
+      <a href="#habilidades"
+        class="mobile-nav-link block py-2 text-base font-medium hover:text-anahata-sand dark:hover:text-anahata-emerald">Habilidades
+        Perceptivas</a>
+      <a href="#formacion"
+        class="mobile-nav-link block py-2 text-base font-medium hover:text-anahata-sand dark:hover:text-anahata-emerald">Formación
+        Técnica</a>
+      <a href="#filosofia"
+        class="mobile-nav-link block py-2 text-base font-medium hover:text-anahata-sand dark:hover:text-anahata-emerald">Enfoque
+        de Soberanía</a>
+      <a href="#programas"
+        class="mobile-nav-link block py-2 text-base font-medium hover:text-anahata-sand dark:hover:text-anahata-emerald">Catálogo
+        de Programas</a>
+      <a href="#fechas"
+        class="mobile-nav-link py-2 text-base font-medium hover:text-anahata-sand dark:hover:text-anahata-emerald flex items-center justify-between">
+        <span>Fechas & Transmisiones en Vivo</span>
+        <span class="px-2 py-0.5 rounded-full text-[10px] bg-red-500 text-white font-bold animate-pulse">TIKTOK
+          LIVE</span>
+      </a>
+      <a href="#espacio"
+        class="mobile-nav-link block py-2 text-base font-medium hover:text-anahata-sand dark:hover:text-anahata-emerald">Espacio
+        & Modalidades</a>
+
+      <div class="pt-2 space-y-2">
+        <a href="https://www.tiktok.com/@centro_anahata?lang=es" target="_blank" rel="noopener noreferrer"
+          class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full text-sm font-semibold bg-black text-white hover:bg-neutral-800 transition-colors">
+          <svg class="w-4 h-4 fill-current text-[#EE1D52]" viewBox="0 0 24 24">
+            <path
+              d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.46V12.9a8.16 8.16 0 0 0 5.73 2.29V11.7a4.84 4.84 0 0 1-3.77-1.78 4.82 4.82 0 0 1-1.23-3.23h5v-.01z" />
+          </svg>
+          <span>TikTok Oficial (@centro_anahata)</span>
+        </a>
+
+        <a href="https://wa.me/56987709985?text=Hola%20Ana,%20me%20gustaría%20recibir%20información%20sobre%20tus%20sesiones%20en%20Centro%20Anahata"
+          target="_blank" rel="noopener noreferrer"
+          class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full text-sm font-semibold bg-anahata-forest text-anahata-cream dark:bg-anahata-emerald dark:text-anahata-dark">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Escribir al WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- 2. HERO SECTION: MANIFIESTO DE SOBERANÍA                  -->
+  <!-- ========================================================= -->
+  <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden">
+    <!-- Fondos de atmósfera y gradientes sutiles -->
+    <div
+      class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-anahata-sand/15 dark:bg-anahata-emerald/10 blur-[120px] rounded-full pointer-events-none -z-10">
+    </div>
+    <div
+      class="absolute top-1/2 right-10 w-[350px] h-[350px] bg-anahata-sage/10 dark:bg-anahata-forest/40 blur-[90px] rounded-full pointer-events-none -z-10">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+        <!-- Columna de Texto Principal -->
+        <div class="lg:col-span-7 space-y-6">
+
+          <!-- Badge Superior -->
+          <!-- <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-anahata-forest/15 dark:border-anahata-emerald/30 bg-anahata-surface/80 dark:bg-anahata-dark-card/80 text-xs sm:text-sm font-semibold text-anahata-sage dark:text-anahata-emerald tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-anahata-sand dark:bg-anahata-emerald animate-ping"></span>
+            <span>[Soberanía Humana & Autogestión Mental]</span>
+          </div> -->
+
+          <!-- Título Principal -->
+          <h1
+            class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-anahata-forest dark:text-anahata-cream leading-[1.12]">
+            Mi Nombre es <span class="text-anahata-sage dark:text-anahata-sand italic">Ana Castillo</span>
+            <span
+              class="block text-2xl sm:text-3xl md:text-4xl font-normal font-sans text-anahata-forest/80 dark:text-anahata-cream/90 mt-2">
+              Instructora de Autogestión Mental y Sutil
+            </span>
+          </h1>
+
+          <!-- Lema de Marca -->
+          <p
+            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-anahata-sand dark:text-anahata-emerald">
+            Cuerpo · Mente · Alma | Soberanía Humana & Autogestión
+          </p>
+
+          <!-- Frase Destacada / Manifiesto -->
+          <div
+            class="p-5 sm:p-6 rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border-l-4 border-anahata-sand dark:border-anahata-emerald shadow-subtle dark:shadow-subtle-dark">
+            <p
+              class="font-serif text-lg sm:text-xl md:text-2xl italic font-semibold text-anahata-forest dark:text-anahata-cream leading-relaxed">
+              &ldquo;No soy una terapeuta convencional. No vendo milagros, burbujas de protección ni dependencias
+              esotéricas. Mi enfoque se basa en la Soberanía Humana.&rdquo;
+            </p>
+          </div>
+
+          <!-- Texto de Impacto Racional y Analítico -->
+          <p class="text-base sm:text-lg text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed font-normal">
+            Entregarte las herramientas lógicas, racionales y técnicas para que aprendas a regular tu propia biología,
+            hackear tus emociones y sostener tu mente en el presente. A través de mis capacidades perceptivas y mi
+            formación técnica, actúo como un espejo: corto los bucles de ilusión y te entreno para que seas el único
+            ejecutivo y soberano de tu realidad.
+          </p>
+
+          <!-- Badges de Modalidad y Enfoque -->
+          <div class="flex flex-wrap items-center gap-2.5 pt-1">
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-anahata-forest/5 dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 text-anahata-forest dark:text-anahata-cream">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-anahata-sage dark:text-anahata-emerald"></i>
+              Presencial en Villa Alemana
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-anahata-forest/5 dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 text-anahata-forest dark:text-anahata-cream">
+              <i data-lucide="video" class="w-3.5 h-3.5 text-anahata-sand dark:text-anahata-sand"></i>
+              Online vía Google Meet
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-anahata-forest/5 dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 text-anahata-forest dark:text-anahata-cream">
+              <i data-lucide="binary" class="w-3.5 h-3.5 text-anahata-sage dark:text-anahata-emerald"></i>
+              Racional y Cuántico
+            </span>
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
+            <a href="#programas"
+              class="inline-flex justify-center items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm bg-anahata-forest text-anahata-cream hover:bg-anahata-sage dark:bg-anahata-emerald dark:text-anahata-dark dark:hover:bg-anahata-sand transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+              <span>Explorar Programas</span>
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/56987709985?text=Hola%20Ana,%20quisiera%20agendar%20una%20sesión%20en%20Centro%20Anahata"
+              target="_blank" rel="noopener noreferrer"
+              class="inline-flex justify-center items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm border-2 border-anahata-forest/20 dark:border-anahata-emerald/40 hover:border-anahata-sand dark:hover:border-anahata-sand bg-anahata-surface dark:bg-anahata-dark-card text-anahata-forest dark:text-anahata-cream transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5">
+              <i data-lucide="calendar-check" class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald"></i>
+              <span>Agendar por WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Columna Visual / Composición de Imagen de Marca -->
+        <div class="lg:col-span-5 relative">
+
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Marco estético con gradiente y sombras -->
+            <div
+              class="relative rounded-3xl overflow-hidden p-1.5 bg-gradient-to-br from-anahata-sand/60 via-anahata-sage/30 to-anahata-forest/60 dark:from-anahata-emerald/50 dark:via-anahata-sand/30 dark:to-anahata-dark-card shadow-2xl">
+              <div
+                class="rounded-[22px] overflow-hidden bg-anahata-surface dark:bg-anahata-dark-card relative aspect-[4/5] group">
+                <img src="./assets/cirugia-astral-sesion.jpg"
+                  alt="Ana Castillo en sesión de autogestión y calibración sutil en Centro Anahata"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-anahata-forest/80 via-transparent to-transparent opacity-60">
+                </div>
+
+                <!-- Badge flotante inferior dentro de la foto -->
+                <div
+                  class="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-anahata-surface/90 dark:bg-anahata-dark/90 backdrop-blur-md border border-anahata-sand/30 dark:border-anahata-emerald/30 shadow-lg flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full overflow-hidden border border-anahata-sand flex-shrink-0">
+                      <img src="./assets/logo-anahata.jpg" alt="Emblema Anahata" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                      <p class="text-xs font-bold text-anahata-forest dark:text-anahata-cream font-serif">Soberanía
+                        Activa</p>
+                      <p class="text-[11px] text-anahata-sage dark:text-anahata-sand font-medium">Calibración Cuántica &
+                        Mental</p>
+                    </div>
+                  </div>
+                  <span class="flex h-2.5 w-2.5 relative">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta Flotante Lateral de Coherencia -->
+            <div
+              class="absolute -top-5 -left-5 sm:-left-8 p-3.5 sm:p-4 rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/30 shadow-xl backdrop-blur-md flex items-center gap-3 max-w-[230px]">
+              <div
+                class="p-2 rounded-xl bg-anahata-sand/15 dark:bg-anahata-emerald/15 text-anahata-forest dark:text-anahata-emerald">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-[11px] uppercase tracking-wider text-anahata-sage dark:text-anahata-sand font-semibold">
+                  Cero Dependencias</p>
+                <p class="text-xs font-bold text-anahata-forest dark:text-anahata-cream leading-snug">Autonomía
+                  Bioeléctrica</p>
+              </div>
+            </div>
+
+            <!-- Tarjeta Flotante Inferior de Ubicación -->
+            <div
+              class="absolute -bottom-6 -right-4 sm:-right-6 p-3 sm:p-4 rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/30 shadow-xl backdrop-blur-md flex items-center gap-3">
+              <div
+                class="p-2 rounded-xl bg-anahata-sage/15 dark:bg-anahata-sand/15 text-anahata-sage dark:text-anahata-sand">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-anahata-forest dark:text-anahata-cream">Cama de Cuarzo</p>
+                <p class="text-[11px] text-anahata-forest/70 dark:text-anahata-cream/70">Unión 641, Villa Alemana</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 3. SECCIÓN: HABILIDADES PERCEPTIVAS Y ÁREAS DE DOMINIO     -->
+  <!-- ========================================================= -->
+  <section id="habilidades"
+    class="py-20 md:py-28 bg-anahata-surface/60 dark:bg-anahata-dark-card/40 border-y border-anahata-forest/10 dark:border-anahata-emerald/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Encabezado de Sección -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-anahata-sage/10 text-anahata-sage dark:bg-anahata-emerald/10 dark:text-anahata-emerald border border-anahata-sage/20 dark:border-anahata-emerald/20">
+          <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+          Percepción Quirúrgica
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-anahata-forest dark:text-anahata-cream">
+          Habilidades Perceptivas y Áreas de Dominio
+        </h2>
+        <p class="text-base sm:text-lg text-anahata-forest/75 dark:text-anahata-cream/75">
+          Capacidades nativas perfeccionadas bajo metodologías rigurosas. Sin rituales ambiguos: decodificación
+          objetiva, diagnóstico de campo e intervención precisa.
+        </p>
+      </div>
+
+      <!-- Grid de 4 Tarjetas -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-8">
+
+        <!-- Tarjeta 1: Lectura del Entorno y Absorción Frecuencial -->
+        <div
+          class="group p-8 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 hover:border-anahata-sand dark:hover:border-anahata-emerald transition-all duration-300 shadow-subtle dark:shadow-subtle-dark hover:-translate-y-1 relative overflow-hidden">
+          <div
+            class="w-12 h-12 rounded-2xl bg-anahata-sage/15 dark:bg-anahata-emerald/15 flex items-center justify-center text-anahata-sage dark:text-anahata-emerald mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="radio" class="w-6 h-6"></i>
+          </div>
+          <span
+            class="text-xs uppercase tracking-wider font-semibold text-anahata-sand dark:text-anahata-sand block mb-2">
+            Escaneo de Campo Inmediato
+          </span>
+          <h3 class="font-serif text-2xl font-bold text-anahata-forest dark:text-anahata-cream mb-3.5">
+            Lectura del Entorno y Absorción Frecuencial
+          </h3>
+          <p class="text-anahata-forest/80 dark:text-anahata-cream/80 text-sm sm:text-base leading-relaxed">
+            Capacidad de escanear y decodificar instantáneamente la vibración y la incoherencia de los espacios y las
+            personas. Opera como un efecto esponja finamente regulado y aislado, transformando el registro sensitivo en
+            información analítica sin absorber la carga densa.
+          </p>
+          <div
+            class="mt-6 pt-4 border-t border-anahata-forest/5 dark:border-anahata-emerald/10 flex items-center justify-between text-xs text-anahata-sage dark:text-anahata-emerald font-semibold">
+            <span>Detección de patrones discordantes</span>
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Interconexión Cuántica Dinámica -->
+        <div
+          class="group p-8 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 hover:border-anahata-sand dark:hover:border-anahata-emerald transition-all duration-300 shadow-subtle dark:shadow-subtle-dark hover:-translate-y-1 relative overflow-hidden">
+          <div
+            class="w-12 h-12 rounded-2xl bg-anahata-sand/20 dark:bg-anahata-sand/20 flex items-center justify-center text-anahata-sand dark:text-anahata-sand mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="network" class="w-6 h-6"></i>
+          </div>
+          <span
+            class="text-xs uppercase tracking-wider font-semibold text-anahata-sand dark:text-anahata-sand block mb-2">
+            No-Localidad & Telepatía Funcional
+          </span>
+          <h3 class="font-serif text-2xl font-bold text-anahata-forest dark:text-anahata-cream mb-3.5">
+            Interconexión Cuántica Dinámica
+          </h3>
+          <p class="text-anahata-forest/80 dark:text-anahata-cream/80 text-sm sm:text-base leading-relaxed">
+            Percepción extrasensorial a distancia. Habilidad nativa para detectar intenciones, pensamientos dirigidos y
+            sintonizar en tiempo real con el estado emocional del consultante, eliminando barreras geográficas en
+            sesiones remotas vía Google Meet.
+          </p>
+          <div
+            class="mt-6 pt-4 border-t border-anahata-forest/5 dark:border-anahata-emerald/10 flex items-center justify-between text-xs text-anahata-sage dark:text-anahata-emerald font-semibold">
+            <span>Sintonía en tiempo real a distancia</span>
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Visión del Campo Sutil Activo -->
+        <div
+          class="group p-8 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 hover:border-anahata-sand dark:hover:border-anahata-emerald transition-all duration-300 shadow-subtle dark:shadow-subtle-dark hover:-translate-y-1 relative overflow-hidden">
+          <div
+            class="w-12 h-12 rounded-2xl bg-anahata-forest/10 dark:bg-anahata-emerald/15 flex items-center justify-center text-anahata-forest dark:text-anahata-emerald mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="scan" class="w-6 h-6"></i>
+          </div>
+          <span
+            class="text-xs uppercase tracking-wider font-semibold text-anahata-sand dark:text-anahata-sand block mb-2">
+            Diagnóstico Óptico Directo
+          </span>
+          <h3 class="font-serif text-2xl font-bold text-anahata-forest dark:text-anahata-cream mb-3.5">
+            Visión del Campo Sutil Activo
+          </h3>
+          <p class="text-anahata-forest/80 dark:text-anahata-cream/80 text-sm sm:text-base leading-relaxed">
+            Capacidad técnica de observar e identificar interferencias, larvas y anomalías en el plano sutil con los
+            ojos abiertos. Permite una localización espacial exacta de los bloqueos antes de iniciar cualquier maniobra
+            de limpieza o desprogramación.
+          </p>
+          <div
+            class="mt-6 pt-4 border-t border-anahata-forest/5 dark:border-anahata-emerald/10 flex items-center justify-between text-xs text-anahata-sage dark:text-anahata-emerald font-semibold">
+            <span>Observación con ojos abiertos</span>
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Frecuencia de Corte de la Ilusión -->
+        <div
+          class="group p-8 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 hover:border-anahata-sand dark:hover:border-anahata-emerald transition-all duration-300 shadow-subtle dark:shadow-subtle-dark hover:-translate-y-1 relative overflow-hidden">
+          <div
+            class="w-12 h-12 rounded-2xl bg-anahata-sage/15 dark:bg-anahata-sand/20 flex items-center justify-center text-anahata-sage dark:text-anahata-sand mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <span
+            class="text-xs uppercase tracking-wider font-semibold text-anahata-sand dark:text-anahata-sand block mb-2">
+            Bisturí Acústico & Desactivación
+          </span>
+          <h3 class="font-serif text-2xl font-bold text-anahata-forest dark:text-anahata-cream mb-3.5">
+            Frecuencia de Corte de la Ilusión
+          </h3>
+          <p class="text-anahata-forest/80 dark:text-anahata-cream/80 text-sm sm:text-base leading-relaxed">
+            Uso de la palabra y la voz como un bisturí sutil capaz de desactivar implantes, pensamientos parásitos y
+            estructuras de engaño en el plano mental del estudiante al instante. Desmorona las narrativas victimistas y
+            restablece la soberanía cognitiva.
+          </p>
+          <div
+            class="mt-6 pt-4 border-t border-anahata-forest/5 dark:border-anahata-emerald/10 flex items-center justify-between text-xs text-anahata-sage dark:text-anahata-emerald font-semibold">
+            <span>Desarticulación de bucles mentales</span>
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner de Respaldo Cuántico con Imagen Portal -->
+      <div
+        class="mt-14 rounded-3xl overflow-hidden border border-anahata-sand/30 dark:border-anahata-emerald/30 bg-anahata-surface dark:bg-anahata-dark-card shadow-xl grid grid-cols-1 lg:grid-cols-12 items-center">
+        <div class="lg:col-span-5 h-64 lg:h-full relative min-h-[260px]">
+          <img src="./assets/portal-cuantico.jpg" alt="Portal Cuántico e Interconexión de Conciencia"
+            class="w-full h-full object-cover">
+          <div
+            class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-transparent via-transparent to-anahata-surface dark:to-anahata-dark-card">
+          </div>
+        </div>
+        <div class="lg:col-span-7 p-6 sm:p-10 space-y-3">
+          <span class="text-xs uppercase tracking-widest text-anahata-sage dark:text-anahata-emerald font-bold">
+            Fundamento de No-Localidad
+          </span>
+          <h4 class="font-serif text-2xl sm:text-3xl font-bold text-anahata-forest dark:text-anahata-cream">
+            La conciencia no está atrapada en el cuerpo físico
+          </h4>
+          <p class="text-sm sm:text-base text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed">
+            Las leyes de la física cuántica demuestran que la información está interconectada. En Centro Anahata no
+            especulamos: operamos sobre la arquitectura energética con protocolos verificables para desanclarte de las
+            trampas de la matriz mental.
+          </p>
+          <div class="pt-2">
+            <a href="https://wa.me/56987709985?text=Hola%20Ana,%20quisiera%20consultar%20sobre%20tus%20sesiones%20de%20escaneo%20y%20percepción%20cuántica"
+              target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm font-semibold text-anahata-forest dark:text-anahata-sand hover:underline">
+              <span>Consultar protocolo por WhatsApp</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 4. SECCIÓN: FORMACIÓN Y ESTUDIOS TÉCNICOS                 -->
+  <!-- ========================================================= -->
+  <section id="formacion" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Encabezado de Sección -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-anahata-sand/20 text-anahata-forest dark:bg-anahata-emerald/10 dark:text-anahata-emerald border border-anahata-sand/30 dark:border-anahata-emerald/20">
+          <i data-lucide="award" class="w-3.5 h-3.5"></i>
+          Respaldo y Autoridad
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-anahata-forest dark:text-anahata-cream">
+          Formación y Estudios Técnicos
+        </h2>
+        <p class="text-base sm:text-lg text-anahata-forest/75 dark:text-anahata-cream/75">
+          La percepción sin método es delirio. La técnica sin visión es estéril. Ana Castillo respalda cada sesión con
+          formación especializada y entrenamiento de alto calibre.
+        </p>
+      </div>
+
+      <!-- 3 Pilares Técnicos -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Pilar 1: Visión Remota -->
+        <div
+          class="p-8 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 shadow-subtle dark:shadow-subtle-dark flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+          <div>
+            <div
+              class="w-14 h-14 rounded-2xl bg-anahata-sage/15 dark:bg-anahata-emerald/15 flex items-center justify-center text-anahata-sage dark:text-anahata-emerald mb-6">
+              <i data-lucide="compass" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase tracking-wider font-semibold text-anahata-sand dark:text-anahata-sand">
+              Pilar Académico I
+            </span>
+            <h3 class="font-serif text-2xl font-bold text-anahata-forest dark:text-anahata-cream mt-1 mb-4">
+              Especialista en Visión Remota
+            </h3>
+            <p class="text-sm text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed mb-6">
+              Entrenamiento en proyección técnica de la conciencia a través de coordenadas de tiempo y espacio. Permite
+              recopilar información fidedigna del campo cuántico sin sesgos perceptivos, accediendo a eventos causales y
+              memorias no resueltas.
+            </p>
+          </div>
+          <div
+            class="space-y-2 pt-4 border-t border-anahata-forest/10 dark:border-anahata-emerald/15 text-xs text-anahata-forest/70 dark:text-anahata-cream/70 font-medium">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald"></i>
+              <span>Proyección por coordenadas objetivas</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald"></i>
+              <span>Recolección fidedigna del campo cuántico</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pilar 2: Biodecodificación Biológica -->
+        <div
+          class="p-8 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border-2 border-anahata-sand/50 dark:border-anahata-emerald/40 shadow-xl dark:shadow-subtle-dark flex flex-col justify-between relative transform md:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          <div
+            class="absolute -top-3.5 right-6 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-anahata-sand text-anahata-forest dark:bg-anahata-emerald dark:text-anahata-dark shadow-sm">
+            Eje Fundamental
+          </div>
+          <div>
+            <div
+              class="w-14 h-14 rounded-2xl bg-anahata-sand/20 dark:bg-anahata-sand/20 flex items-center justify-center text-anahata-sand dark:text-anahata-sand mb-6">
+              <i data-lucide="dna" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase tracking-wider font-semibold text-anahata-sand dark:text-anahata-sand">
+              Pilar Académico II
+            </span>
+            <h3 class="font-serif text-2xl font-bold text-anahata-forest dark:text-anahata-cream mt-1 mb-4">
+              Biodecodificación Biológica
+            </h3>
+            <p class="text-sm text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed mb-6">
+              Comprensión quirúrgica del lenguaje del cuerpo, sus síntomas físicos, somatizaciones y los mandatos
+              transgeneracionales grabados en el clan familiar. Se desactiva el código biológico del conflicto para
+              devolver la homeostasis al organismo.
+            </p>
+          </div>
+          <div
+            class="space-y-2 pt-4 border-t border-anahata-forest/10 dark:border-anahata-emerald/15 text-xs text-anahata-forest/70 dark:text-anahata-cream/70 font-medium">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-anahata-sand dark:text-anahata-emerald"></i>
+              <span>Decodificación del síntoma orgánico</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-anahata-sand dark:text-anahata-emerald"></i>
+              <span>Corte de mandatos y lealtades del clan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pilar 3: Cirugía Astral -->
+        <div
+          class="p-8 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 shadow-subtle dark:shadow-subtle-dark flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+          <div>
+            <div
+              class="w-14 h-14 rounded-2xl bg-anahata-forest/10 dark:bg-anahata-emerald/15 flex items-center justify-center text-anahata-forest dark:text-anahata-emerald mb-6">
+              <i data-lucide="activity" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase tracking-wider font-semibold text-anahata-sand dark:text-anahata-sand">
+              Pilar Académico III
+            </span>
+            <h3 class="font-serif text-2xl font-bold text-anahata-forest dark:text-anahata-cream mt-1 mb-4">
+              Operadora en Cirugía Astral
+            </h3>
+            <p class="text-sm text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed mb-6">
+              Formación avanzada en extirpación, desinfección energética y reparación de roturas áuricas provocadas por
+              larvas, implantes e interferencias sutiles. Se restablece la integridad del cuerpo etérico garantizando
+              que no queden filtraciones de energía vital.
+            </p>
+          </div>
+          <div
+            class="space-y-2 pt-4 border-t border-anahata-forest/10 dark:border-anahata-emerald/15 text-xs text-anahata-forest/70 dark:text-anahata-cream/70 font-medium">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald"></i>
+              <span>Extirpación técnica de larvas e implantes</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald"></i>
+              <span>Reparación de la malla bioenergética</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 5. SECCIÓN MANIFIESTO: ELEVA TU FRECUENCIA DE LA MATRIX    -->
+  <!-- ========================================================= -->
+  <section id="filosofia"
+    class="py-20 bg-anahata-forest text-anahata-cream dark:bg-anahata-dark-card border-y border-anahata-sand/20 relative overflow-hidden">
+    <!-- Luz ambiental de fondo -->
+    <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-anahata-sand/10 rounded-full blur-3xl pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+        <!-- Afiche Visual Oficial Anahata -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative max-w-sm rounded-3xl overflow-hidden border-2 border-anahata-sand/40 shadow-2xl group">
+            <img src="./assets/poster-frecuencia.jpg"
+              alt="Eleva tu frecuencia de la densidad de la matrix - Ana Castillo Centro Anahata"
+              class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-40">
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido y Manifiesto de Ruptura con el New Age -->
+        <div class="lg:col-span-7 space-y-6">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-anahata-sand/20 text-anahata-sand border border-anahata-sand/30">
+            <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+            Hackeo de la Realidad
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            Eleva tu frecuencia de la densidad de la matrix <span class="italic text-anahata-sand">y aprende a
+              sostenerla</span>
+          </h2>
+
+          <p class="text-base sm:text-lg text-anahata-cream/85 leading-relaxed font-light">
+            La mayoría de las personas asisten a terapias para sentirse aliviadas durante 48 horas y luego rebotan a la
+            misma densidad emocional. Esto ocurre porque no se les enseñó la arquitectura del campo ni cómo gestionar su
+            propia biología.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-2xl bg-black/20 border border-white/10">
+              <p class="text-xs uppercase font-bold text-red-300 tracking-wider mb-1">Lo que NO hacemos</p>
+              <p class="text-xs text-anahata-cream/80">Promesas mágicas, dependencia de amuletos, justificaciones del
+                ego ni evasión espiritual pasiva.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-anahata-sand/15 border border-anahata-sand/30">
+              <p class="text-xs uppercase font-bold text-anahata-sand tracking-wider mb-1">El Método Anahata</p>
+              <p class="text-xs text-anahata-cream/90">Autogestión mental, hackeo emocional, desprogramación del clan y
+                soberanía biológica permanente.</p>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <a href="https://wa.me/56987709985?text=Hola%20Ana,%20leí%20tu%20manifiesto%20sobre%20soberanía%20y%20la%20matrix,%20quiero%20conversar%20contigo"
+              target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-anahata-sand text-anahata-forest hover:bg-white transition-all duration-300 shadow-md">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Conversar directamente con Ana Castillo</span>
+            </a>
+            <span class="text-xs text-anahata-cream/70 flex items-center gap-1.5">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-anahata-sand"></i>
+              +56 9 8770 9985
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 6. SECCIÓN: CATÁLOGO DE PROGRAMAS Y ENTRENAMIENTOS        -->
+  <!-- ========================================================= -->
+  <section id="programas" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Encabezado de Sección -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-anahata-sage/10 text-anahata-sage dark:bg-anahata-emerald/10 dark:text-anahata-emerald border border-anahata-sage/20 dark:border-anahata-emerald/20">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+          Entrenamientos & Servicios
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-anahata-forest dark:text-anahata-cream">
+          Catálogo de Programas y Entrenamientos
+        </h2>
+        <p class="text-base sm:text-lg text-anahata-forest/75 dark:text-anahata-cream/75">
+          Procesos formativos diseñados para desmantelar la estructura del síntoma y erigir un criterio soberano en tu
+          vida cotidiana.
+        </p>
+      </div>
+
+      <!-- Tarjetas de Programas -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+
+        <!-- ========================================== -->
+        <!-- TARJETA 1: DESTACADA / PRODUCTO ESTRELLA   -->
+        <!-- ========================================== -->
+        <div
+          class="lg:col-span-7 rounded-3xl p-8 sm:p-10 bg-anahata-surface dark:bg-anahata-dark-card border-2 border-anahata-sand dark:border-anahata-emerald shadow-xl dark:shadow-glow-emerald flex flex-col justify-between relative overflow-hidden group">
+
+          <!-- Cinta de Producto Estrella -->
+          <div class="absolute top-0 right-0">
+            <div
+              class="bg-gradient-to-l from-anahata-sand to-anahata-sage dark:from-anahata-emerald dark:to-anahata-sage text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-6 rounded-bl-2xl shadow-sm">
+              ★ Producto Estrella
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-anahata-sand/20 text-anahata-forest dark:bg-anahata-emerald/20 dark:text-anahata-cream mb-4">
+              <i data-lucide="user-check" class="w-3.5 h-3.5 text-anahata-sand dark:text-anahata-emerald"></i>
+              <span>Individual y Exclusivo</span>
+            </div>
+
+            <h3 class="font-serif text-3xl sm:text-4xl font-bold text-anahata-forest dark:text-anahata-cream mb-2">
+              Autogestión Emocional y Racional
+            </h3>
+            <p class="text-sm font-semibold uppercase tracking-wider text-anahata-sage dark:text-anahata-sand mb-5">
+              Entrenamiento Intensivo 1 a 1 (Personalizado)
+            </p>
+
+            <!-- Duración Destacada -->
+            <div
+              class="p-4 rounded-2xl bg-anahata-cream dark:bg-anahata-dark border border-anahata-forest/10 dark:border-anahata-emerald/20 mb-6 flex items-center gap-4">
+              <div
+                class="p-3 rounded-xl bg-anahata-sand/20 dark:bg-anahata-emerald/20 text-anahata-forest dark:text-anahata-emerald flex-shrink-0">
+                <i data-lucide="clock" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs font-semibold uppercase text-anahata-sage dark:text-anahata-sand">Formato de Inmersión
+                </p>
+                <p class="text-sm sm:text-base font-bold text-anahata-forest dark:text-anahata-cream">
+                  6 horas cronológicas divididas en 3 días consecutivos
+                </p>
+              </div>
+            </div>
+
+            <!-- Descripción -->
+            <p class="text-anahata-forest/80 dark:text-anahata-cream/80 text-sm sm:text-base leading-relaxed mb-6">
+              Proceso a la medida de tu mente para desarmar pensamientos intrusivos, extirpar cargas del linaje familiar
+              y activar tu diseño original. Un entrenamiento quirúrgico donde nos sentamos a calibrar tu campo sutil,
+              limpiar interferencias y dotarte de un protocolo mental inviolable.
+            </p>
+
+            <!-- Desglose de Fases -->
+            <div class="space-y-3 mb-8">
+              <div class="flex items-start gap-3 text-xs sm:text-sm text-anahata-forest/80 dark:text-anahata-cream/80">
+                <div
+                  class="w-5 h-5 rounded-full bg-anahata-sage text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">
+                  1</div>
+                <div><strong class="text-anahata-forest dark:text-anahata-cream">Día 1: Diagnóstico de Campo &
+                    Corte:</strong> Escaneo perceptivo, detección de fugas bioenergéticas y extirpación de pensamientos
+                  parásitos.</div>
+              </div>
+              <div class="flex items-start gap-3 text-xs sm:text-sm text-anahata-forest/80 dark:text-anahata-cream/80">
+                <div
+                  class="w-5 h-5 rounded-full bg-anahata-sand text-anahata-forest flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">
+                  2</div>
+                <div><strong class="text-anahata-forest dark:text-anahata-cream">Día 2: Biodecodificación
+                    Transgeneracional:</strong> Desmantelamiento de lealtades y mandatos del clan familiar grabados en
+                  tu biología.</div>
+              </div>
+              <div class="flex items-start gap-3 text-xs sm:text-sm text-anahata-forest/80 dark:text-anahata-cream/80">
+                <div
+                  class="w-5 h-5 rounded-full bg-anahata-emerald text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">
+                  3</div>
+                <div><strong class="text-anahata-forest dark:text-anahata-cream">Día 3: Protocolo de Soberanía
+                    Diaria:</strong> Anclaje neurológico, entrenamiento para sostener la frecuencia y autogestión
+                  definitiva.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón de Acción Específico de Tarjeta 1 con URL Encoded -->
+          <div class="pt-4 border-t border-anahata-forest/10 dark:border-anahata-emerald/20">
+            <a href="https://wa.me/56987709985?text=Hola%20Ana,%20quiero%20información%20sobre%20el%20Entrenamiento%20Intensivo%20Personalizado%20(1%20a%201)"
+              target="_blank" rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-2xl font-bold text-sm sm:text-base bg-anahata-forest text-anahata-cream hover:bg-anahata-sage dark:bg-anahata-emerald dark:text-anahata-dark dark:hover:bg-anahata-sand transition-all duration-300 shadow-md hover:shadow-xl group-hover:scale-[1.01]">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Solicitar Información y Cupo 1 a 1</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TARJETA 2: TALLERES GRUPALES ONLINE        -->
+        <!-- ========================================== -->
+        <div
+          class="lg:col-span-5 rounded-3xl p-8 sm:p-10 bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 shadow-subtle dark:shadow-subtle-dark flex flex-col justify-between relative">
+
+          <div>
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-anahata-sage/15 text-anahata-sage dark:bg-anahata-sand/20 dark:text-anahata-sand mb-4">
+              <i data-lucide="bell" class="w-3.5 h-3.5"></i>
+              <span>Próximamente</span>
+            </div>
+
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-anahata-forest dark:text-anahata-cream mb-2">
+              Herramientas de Soberanía para el Día a Día
+            </h3>
+            <p class="text-sm font-semibold uppercase tracking-wider text-anahata-sand dark:text-anahata-sand mb-5">
+              Talleres Grupales Online
+            </p>
+
+            <div
+              class="p-4 rounded-2xl bg-anahata-cream dark:bg-anahata-dark border border-anahata-forest/10 dark:border-anahata-emerald/20 mb-6 flex items-center gap-4">
+              <div
+                class="p-3 rounded-xl bg-anahata-sage/15 dark:bg-anahata-sand/15 text-anahata-sage dark:text-anahata-sand flex-shrink-0">
+                <i data-lucide="users" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs font-semibold uppercase text-anahata-sage dark:text-anahata-sand">Modalidad Grupal</p>
+                <p class="text-sm sm:text-base font-bold text-anahata-forest dark:text-anahata-cream">
+                  Intensivos Sincrónicos vía Google Meet
+                </p>
+              </div>
+            </div>
+
+            <p class="text-anahata-forest/80 dark:text-anahata-cream/80 text-sm sm:text-base leading-relaxed mb-6">
+              Talleres intensivos online orientados al aprendizaje práctico de protección de campo, lectura de entorno y
+              biodecodificación personal. Aprenderás a diagnosticar cuándo estás bajo interferencia y cómo aplicar
+              técnicas de soberanía sin recurrir a terceros.
+            </p>
+
+            <!-- Temario Sintético -->
+            <ul class="space-y-3 mb-8 text-xs sm:text-sm text-anahata-forest/80 dark:text-anahata-cream/80">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="shield" class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald flex-shrink-0"></i>
+                <span>Protección y sellado del campo bioeléctrico.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="scan" class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald flex-shrink-0"></i>
+                <span>Lectura rápida de vibración de espacios y personas.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="code" class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald flex-shrink-0"></i>
+                <span>Biodecodificación personal ante síntomas agudos.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Botón de Acción Específico de Tarjeta 2 con URL Encoded -->
+          <div class="pt-4 border-t border-anahata-forest/10 dark:border-anahata-emerald/20">
+            <a href="https://wa.me/56987709985?text=Hola%20Ana,%20me%20gustaría%20anotarme%20en%20la%20lista%20de%20espera%20para%20los%20Talleres%20Grupales"
+              target="_blank" rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-2xl font-bold text-sm sm:text-base border-2 border-anahata-forest/20 dark:border-anahata-emerald/40 hover:border-anahata-sand dark:hover:border-anahata-sand bg-anahata-surface dark:bg-anahata-dark text-anahata-forest dark:text-anahata-cream transition-all duration-300 shadow-sm hover:shadow-md">
+              <i data-lucide="bookmark-plus" class="w-5 h-5 text-anahata-sand dark:text-anahata-emerald"></i>
+              <span>Anotarme en Lista de Espera Grupal</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 7. SECCIÓN: FECHAS IMPORTANTES, AGENDA & EN VIVO (TIKTOK) -->
+  <!-- ========================================================= -->
+  <section id="fechas"
+    class="py-20 md:py-28 relative overflow-hidden bg-anahata-surface/80 dark:bg-anahata-dark/80 border-t border-anahata-forest/10 dark:border-anahata-emerald/15">
+
+    <!-- Decoración sutil de fondo -->
+    <div
+      class="absolute -top-32 right-1/4 w-80 h-80 bg-red-500/5 dark:bg-emerald-500/5 rounded-full blur-3xl pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+      <!-- Encabezado de Sección -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-red-500/10 text-red-600 dark:bg-red-500/15 dark:text-red-400 border border-red-500/20">
+          <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+          <span>Transmisiones en Directo & Agenda Oficial</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-anahata-forest dark:text-anahata-cream">
+          Fechas Importantes, Agenda & Directos
+        </h2>
+        <p class="text-base sm:text-lg text-anahata-forest/75 dark:text-anahata-cream/75">
+          Conoce cuándo se publican nuestros anuncios, la apertura periódica de cupos, actividades grupales y las
+          transmisiones en vivo realizadas directamente por TikTok con Ana Castillo.
+        </p>
+      </div>
+
+      <!-- Tarjeta Destacada de Transmisiones en Vivo por TikTok -->
+      <div
+        class="mb-14 rounded-3xl p-8 sm:p-10 bg-gradient-to-br from-anahata-forest/5 via-anahata-surface to-anahata-sand/10 dark:from-anahata-dark-card dark:via-anahata-dark dark:to-anahata-dark-card border-2 border-anahata-sand/40 dark:border-anahata-emerald/40 shadow-xl dark:shadow-subtle-dark relative overflow-hidden">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+          <div class="lg:col-span-7 space-y-4">
+
+            <div
+              class="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-black/90 text-white text-xs font-bold tracking-wide shadow-sm">
+              <!-- TikTok Logo SVG -->
+              <svg class="w-4 h-4 fill-current text-[#EE1D52]" viewBox="0 0 24 24">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.46V12.9a8.16 8.16 0 0 0 5.73 2.29V11.7a4.84 4.84 0 0 1-3.77-1.78 4.82 4.82 0 0 1-1.23-3.23h5v-.01z" />
+              </svg>
+              <span>Canal Oficial de Directos: <strong class="text-[#69C9D0]">@centro_anahata</strong></span>
+            </div>
+
+            <h3
+              class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-anahata-forest dark:text-anahata-cream">
+              Transmisiones en Vivo (TikTok Live) con Ana Castillo
+            </h3>
+
+            <p class="text-sm sm:text-base text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed">
+              Sesiones abiertas en tiempo real donde abordamos el hackeo de la matrix mental, análisis perceptivo de
+              interferencias sutiles, biodecodificación de casos de la audiencia y respuestas quirúrgicas a dudas de la
+              comunidad. Sin rodeos new age: análisis puro y herramientas de soberanía.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="https://www.tiktok.com/@centro_anahata?lang=es" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl font-bold text-sm bg-black hover:bg-neutral-800 text-white transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                <svg class="w-5 h-5 fill-current text-[#EE1D52]" viewBox="0 0 24 24">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.46V12.9a8.16 8.16 0 0 0 5.73 2.29V11.7a4.84 4.84 0 0 1-3.77-1.78 4.82 4.82 0 0 1-1.23-3.23h5v-.01z" />
+                </svg>
+                <span>Seguir en TikTok & Activar Notificaciones</span>
+                <i data-lucide="external-link" class="w-4 h-4 text-neutral-400"></i>
+              </a>
+
+              <a href="https://wa.me/56987709985?text=Hola%20Ana,%20quisiera%20saber%20cuándo%20es%20el%20próximo%20TikTok%20Live%20y%20sus%20temáticas"
+                target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl font-semibold text-sm border border-anahata-forest/20 dark:border-anahata-emerald/40 hover:bg-anahata-forest/5 dark:hover:bg-anahata-emerald/10 text-anahata-forest dark:text-anahata-cream transition-colors">
+                <i data-lucide="bell" class="w-4 h-4 text-anahata-sand dark:text-anahata-emerald"></i>
+                <span>Avisarme por WhatsApp</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div
+            class="lg:col-span-5 bg-anahata-surface dark:bg-anahata-dark p-6 sm:p-7 rounded-2xl border border-anahata-forest/10 dark:border-anahata-emerald/20 shadow-md space-y-4">
+            <div
+              class="flex items-center justify-between pb-3 border-b border-anahata-forest/10 dark:border-anahata-emerald/15">
+              <span
+                class="text-xs uppercase font-bold tracking-wider text-anahata-sage dark:text-anahata-sand">Programación
+                Habitual</span>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-red-500/10 text-red-500 border border-red-500/20">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+                Directos Periódicos
+              </span>
+            </div>
+
+            <div class="space-y-3.5 text-xs sm:text-sm">
+              <div class="flex items-start gap-3">
+                <div
+                  class="p-2 rounded-xl bg-anahata-sand/15 dark:bg-anahata-emerald/15 text-anahata-forest dark:text-anahata-emerald flex-shrink-0">
+                  <i data-lucide="radio" class="w-4 h-4 text-red-500"></i>
+                </div>
+                <div>
+                  <strong class="text-anahata-forest dark:text-anahata-cream block">Transmisiones Semanales</strong>
+                  <span class="text-anahata-forest/70 dark:text-anahata-cream/70">Jueves y Domingos | 21:00 hrs (Hora
+                    Chile / GMT-3)</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div
+                  class="p-2 rounded-xl bg-anahata-sage/15 dark:bg-anahata-sand/15 text-anahata-sage dark:text-anahata-sand flex-shrink-0">
+                  <i data-lucide="message-square" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <strong class="text-anahata-forest dark:text-anahata-cream block">Dinámica Interactiva</strong>
+                  <span class="text-anahata-forest/70 dark:text-anahata-cream/70">Lectura de preguntas del chat,
+                    decodificación y cápsulas de soberanía mental.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="p-2 rounded-xl bg-black text-white flex-shrink-0">
+                  <svg class="w-4 h-4 fill-current text-[#EE1D52]" viewBox="0 0 24 24">
+                    <path
+                      d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.46V12.9a8.16 8.16 0 0 0 5.73 2.29V11.7a4.84 4.84 0 0 1-3.77-1.78 4.82 4.82 0 0 1-1.23-3.23h5v-.01z" />
+                  </svg>
+                </div>
+                <div>
+                  <strong class="text-anahata-forest dark:text-anahata-cream block">Cuenta Oficial</strong>
+                  <span class="text-anahata-forest/70 dark:text-anahata-cream/70">tiktok.com/@centro_anahata</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Grid de 4 Tipos de Fechas y Actividades a Considerar -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Tarjeta 1: Transmisiones en Vivo -->
+        <div
+          class="p-6 rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 hover:border-anahata-sand dark:hover:border-anahata-emerald transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="px-2.5 py-1 rounded-lg text-[11px] font-bold uppercase tracking-wider bg-red-500/10 text-red-600 dark:text-red-400">
+                Directos
+              </span>
+              <i data-lucide="video" class="w-5 h-5 text-red-500"></i>
+            </div>
+            <h4 class="font-serif text-lg font-bold text-anahata-forest dark:text-anahata-cream mb-2">
+              Transmisiones en TikTok
+            </h4>
+            <p class="text-xs text-anahata-forest/75 dark:text-anahata-cream/75 leading-relaxed mb-4">
+              Directos periódicos para resolver inquietudes en vivo, abordar desparasitación sutil y soberanía cognitiva
+              con la audiencia.
+            </p>
+          </div>
+          <div
+            class="pt-3 border-t border-anahata-forest/10 dark:border-anahata-emerald/15 text-[11px] font-semibold text-anahata-sage dark:text-anahata-sand flex items-center justify-between">
+            <span>Semanales (21:00 hrs)</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Convocatorias y Cupos 1 a 1 -->
+        <div
+          class="p-6 rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 hover:border-anahata-sand dark:hover:border-anahata-emerald transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="px-2.5 py-1 rounded-lg text-[11px] font-bold uppercase tracking-wider bg-anahata-sand/20 text-anahata-forest dark:bg-anahata-emerald/20 dark:text-anahata-emerald">
+                Convocatorias
+              </span>
+              <i data-lucide="calendar" class="w-5 h-5 text-anahata-sand dark:text-anahata-emerald"></i>
+            </div>
+            <h4 class="font-serif text-lg font-bold text-anahata-forest dark:text-anahata-cream mb-2">
+              Apertura de Cupos 1 a 1
+            </h4>
+            <p class="text-xs text-anahata-forest/75 dark:text-anahata-cream/75 leading-relaxed mb-4">
+              Ciclos quincenales (1° y 15 de cada mes). Publicación de fechas y disponibilidad para el entrenamiento
+              intensivo de 6 horas.
+            </p>
+          </div>
+          <div
+            class="pt-3 border-t border-anahata-forest/10 dark:border-anahata-emerald/15 text-[11px] font-semibold text-anahata-sage dark:text-anahata-sand flex items-center justify-between">
+            <span>1° y 15 de cada mes</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Reuniones y Talleres Grupales -->
+        <div
+          class="p-6 rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 hover:border-anahata-sand dark:hover:border-anahata-emerald transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="px-2.5 py-1 rounded-lg text-[11px] font-bold uppercase tracking-wider bg-anahata-sage/20 text-anahata-sage dark:bg-anahata-sand/20 dark:text-anahata-sand">
+                Reuniones
+              </span>
+              <i data-lucide="users" class="w-5 h-5 text-anahata-sage dark:text-anahata-sand"></i>
+            </div>
+            <h4 class="font-serif text-lg font-bold text-anahata-forest dark:text-anahata-cream mb-2">
+              Talleres y Masterclasses
+            </h4>
+            <p class="text-xs text-anahata-forest/75 dark:text-anahata-cream/75 leading-relaxed mb-4">
+              Encuentros sincrónicos online vía Google Meet. Las fechas de cada módulo se anuncian anticipadamente por
+              TikTok y WhatsApp.
+            </p>
+          </div>
+          <div
+            class="pt-3 border-t border-anahata-forest/10 dark:border-anahata-emerald/15 text-[11px] font-semibold text-anahata-sage dark:text-anahata-sand flex items-center justify-between">
+            <span>Avisos anticipados</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Anuncios y Actividades Especiales -->
+        <div
+          class="p-6 rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 hover:border-anahata-sand dark:hover:border-anahata-emerald transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="px-2.5 py-1 rounded-lg text-[11px] font-bold uppercase tracking-wider bg-anahata-forest/10 dark:bg-anahata-dark text-anahata-forest dark:text-anahata-cream">
+                Actividades
+              </span>
+              <i data-lucide="megaphone" class="w-5 h-5 text-anahata-forest dark:text-anahata-cream"></i>
+            </div>
+            <h4 class="font-serif text-lg font-bold text-anahata-forest dark:text-anahata-cream mb-2">
+              Anuncios & Espacio Físico
+            </h4>
+            <p class="text-xs text-anahata-forest/75 dark:text-anahata-cream/75 leading-relaxed mb-4">
+              Lanzamiento de jornadas presenciales en Villa Alemana (cama de cuarzo), publicaciones de nuevas guías y
+              avisos institucionales.
+            </p>
+          </div>
+          <div
+            class="pt-3 border-t border-anahata-forest/10 dark:border-anahata-emerald/15 text-[11px] font-semibold text-anahata-sage dark:text-anahata-sand flex items-center justify-between">
+            <span>Canales oficiales</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 8. ESPACIO FÍSICO, MODALIDADES Y UBICACIÓN                -->
+  <!-- ========================================================= -->
+  <section id="espacio"
+    class="py-20 md:py-28 bg-anahata-surface/60 dark:bg-anahata-dark-card/40 border-t border-anahata-forest/10 dark:border-anahata-emerald/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-anahata-sand/20 text-anahata-forest dark:bg-anahata-emerald/10 dark:text-anahata-emerald border border-anahata-sand/30 dark:border-anahata-emerald/20">
+          <i data-lucide="map" class="w-3.5 h-3.5"></i>
+          Espacio & Accesibilidad
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-anahata-forest dark:text-anahata-cream">
+          Espacio Físico, Modalidades y Ubicación
+        </h2>
+        <p class="text-base sm:text-lg text-anahata-forest/75 dark:text-anahata-cream/75">
+          Ya sea de forma presencial en nuestro centro acondicionado o a distancia desde cualquier punto del mundo, la
+          experiencia mantiene el mismo nivel de exactitud y rigor.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+
+        <!-- Bloque Presencial -->
+        <div
+          class="lg:col-span-6 p-8 sm:p-10 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 shadow-subtle dark:shadow-subtle-dark flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-2xl bg-anahata-forest/10 dark:bg-anahata-emerald/15 flex items-center justify-center text-anahata-forest dark:text-anahata-emerald">
+                <i data-lucide="building" class="w-6 h-6"></i>
+              </div>
+              <span
+                class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-anahata-forest/5 dark:bg-anahata-dark text-anahata-sage dark:text-anahata-emerald border border-anahata-forest/10 dark:border-anahata-emerald/20">
+                Presencial
+              </span>
+            </div>
+
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-anahata-forest dark:text-anahata-cream mb-4">
+              Sala Acondicionada con Cama de Cuarzo
+            </h3>
+
+            <p class="text-anahata-forest/80 dark:text-anahata-cream/80 text-sm sm:text-base leading-relaxed mb-6">
+              Ubicado en Villa Alemana, nuestro espacio está diseñado para aislar el ruido exterior y garantizar una
+              regulación bioeléctrica profunda. La cama de cuarzo amplifica la coherencia del campo mórfico y facilita
+              la absorción y descarga de memorias celulares.
+            </p>
+
+            <div
+              class="p-4 rounded-2xl bg-anahata-cream dark:bg-anahata-dark border border-anahata-forest/10 dark:border-anahata-emerald/20 space-y-2.5 text-xs sm:text-sm">
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="map-pin"
+                  class="w-4 h-4 text-anahata-sand dark:text-anahata-emerald flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-anahata-forest dark:text-anahata-cream">Dirección:</strong>
+                  <span> Unión 641, Villa Alemana, Región de Valparaíso, Chile.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="check-circle"
+                  class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-anahata-forest dark:text-anahata-cream">Ambiente:</strong>
+                  <span> Cama de cuarzo, armonización acústica y campo sutil activo.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-anahata-forest/10 dark:border-anahata-emerald/20 flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?q=Union+641,+Villa+Alemana,+Valparaiso,+Chile" target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold border border-anahata-forest/20 dark:border-anahata-emerald/40 hover:bg-anahata-forest hover:text-white dark:hover:bg-anahata-emerald dark:hover:text-anahata-dark transition-colors">
+              <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
+              <span>Ver en Google Maps</span>
+            </a>
+            <a href="https://wa.me/56987709985?text=Hola%20Ana,%20quisiera%20agendar%20una%20sesión%20presencial%20en%20Villa%20Alemana"
+              target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-anahata-forest text-anahata-cream dark:bg-anahata-emerald dark:text-anahata-dark hover:opacity-90 transition-opacity">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+              <span>Agendar Presencial</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bloque Online / Remoto -->
+        <div
+          class="lg:col-span-6 p-8 sm:p-10 rounded-3xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 shadow-subtle dark:shadow-subtle-dark flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-2xl bg-anahata-sand/20 dark:bg-anahata-sand/20 flex items-center justify-center text-anahata-sand dark:text-anahata-sand">
+                <i data-lucide="globe" class="w-6 h-6"></i>
+              </div>
+              <span
+                class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-anahata-forest/5 dark:bg-anahata-dark text-anahata-sand dark:text-anahata-sand border border-anahata-forest/10 dark:border-anahata-emerald/20">
+                A Distancia
+              </span>
+            </div>
+
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-anahata-forest dark:text-anahata-cream mb-4">
+              Modalidad Remota vía Google Meet
+            </h3>
+
+            <p class="text-anahata-forest/80 dark:text-anahata-cream/80 text-sm sm:text-base leading-relaxed mb-6">
+              A través de la visión remota y la interconexión cuántica no-local, la distancia física no representa
+              obstáculo alguno. Atendemos a consultantes de todo Chile y del extranjero con la misma exactitud en el
+              escaneo y la resolución del conflicto.
+            </p>
+
+            <div
+              class="p-4 rounded-2xl bg-anahata-cream dark:bg-anahata-dark border border-anahata-forest/10 dark:border-anahata-emerald/20 space-y-2.5 text-xs sm:text-sm">
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="video"
+                  class="w-4 h-4 text-anahata-sand dark:text-anahata-emerald flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-anahata-forest dark:text-anahata-cream">Plataforma:</strong>
+                  <span> Videollamada HD vía Google Meet con enlace seguro y privado.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="sparkles"
+                  class="w-4 h-4 text-anahata-sage dark:text-anahata-emerald flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-anahata-forest dark:text-anahata-cream">Alcance:</strong>
+                  <span> Todo Chile y comunidad hispanohablante a nivel internacional.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-anahata-forest/10 dark:border-anahata-emerald/20 flex flex-wrap gap-3">
+            <a href="https://wa.me/56987709985?text=Hola%20Ana,%20quisiera%20coordinar%20una%20sesión%20online%20vía%20Google%20Meet"
+              target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-anahata-forest text-anahata-cream dark:bg-anahata-emerald dark:text-anahata-dark hover:opacity-90 transition-opacity">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+              <span>Agendar Sesión Online</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bloque Multimedia TikTok Oficial -->
+        <div
+          class="lg:col-span-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-anahata-forest/5 via-anahata-surface to-anahata-sand/15 dark:from-anahata-dark-card dark:via-anahata-dark dark:to-anahata-dark-card border border-anahata-forest/15 dark:border-anahata-emerald/30 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div
+              class="w-14 h-14 rounded-2xl bg-black text-white flex items-center justify-center flex-shrink-0 shadow-md">
+              <svg class="w-7 h-7 fill-current text-[#EE1D52]" viewBox="0 0 24 24">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.46V12.9a8.16 8.16 0 0 0 5.73 2.29V11.7a4.84 4.84 0 0 1-3.77-1.78 4.82 4.82 0 0 1-1.23-3.23h5v-.01z" />
+              </svg>
+            </div>
+            <div>
+              <div
+                class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-red-500/10 text-red-600 dark:text-red-400 mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-ping"></span>
+                Transmisiones & Multimedia Oficial
+              </div>
+              <h4 class="font-serif text-xl sm:text-2xl font-bold text-anahata-forest dark:text-anahata-cream">
+                Canal Oficial de TikTok: @centro_anahata
+              </h4>
+              <p class="text-xs sm:text-sm text-anahata-forest/75 dark:text-anahata-cream/75">
+                Conéctate a las transmisiones periódicas en directo, debates de soberanía humana, biodecodificación en
+                tiempo real y anuncios oficiales de fechas y reuniones.
+              </p>
+            </div>
+          </div>
+          <a href="https://www.tiktok.com/@centro_anahata?lang=es" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl text-xs sm:text-sm font-bold bg-black text-white hover:bg-neutral-800 transition-all shadow-md flex-shrink-0 hover:scale-105">
+            <svg class="w-4 h-4 fill-current text-[#EE1D52]" viewBox="0 0 24 24">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.46V12.9a8.16 8.16 0 0 0 5.73 2.29V11.7a4.84 4.84 0 0 1-3.77-1.78 4.82 4.82 0 0 1-1.23-3.23h5v-.01z" />
+            </svg>
+            <span>Ver TikTok @centro_anahata</span>
+            <i data-lucide="external-link" class="w-4 h-4 text-neutral-400"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 9. SECCIÓN DE PREGUNTAS FRECUENTES (ACORDEÓN)             -->
+  <!-- ========================================================= -->
+  <section class="py-20 md:py-24 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center space-y-3 mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-anahata-sage dark:text-anahata-emerald">Claridad &
+          Transparencia</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-anahata-forest dark:text-anahata-cream">
+          Preguntas Frecuentes
+        </h2>
+      </div>
+
+      <div class="space-y-4" id="faq-accordion">
+
+        <!-- Pregunta 1 -->
+        <div
+          class="rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 overflow-hidden shadow-sm">
+          <button type="button"
+            class="faq-toggle w-full px-6 py-4.5 text-left font-serif text-lg sm:text-xl font-bold text-anahata-forest dark:text-anahata-cream flex items-center justify-between gap-4">
+            <span>¿En qué se diferencia de una terapia tradicional o esotérica?</span>
+            <i data-lucide="chevron-down"
+              class="faq-icon w-5 h-5 text-anahata-sand transition-transform duration-300"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed border-t border-anahata-forest/5 dark:border-anahata-emerald/10 pt-3">
+            En Centro Anahata no fomentamos la dependencia espiritual ni vendemos amuletos. Ana Castillo trabaja desde
+            la Soberanía Humana: se te entregan herramientas cognitivas, racionales y protocolos perceptivos exactos
+            para que aprendas a regular tu propia mente y biología de por vida.
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div
+          class="rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 overflow-hidden shadow-sm">
+          <button type="button"
+            class="faq-toggle w-full px-6 py-4.5 text-left font-serif text-lg sm:text-xl font-bold text-anahata-forest dark:text-anahata-cream flex items-center justify-between gap-4">
+            <span>¿Cómo funciona una sesión a distancia sin perder efectividad?</span>
+            <i data-lucide="chevron-down"
+              class="faq-icon w-5 h-5 text-anahata-sand transition-transform duration-300"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed border-t border-anahata-forest/5 dark:border-anahata-emerald/10 pt-3">
+            Bajo el principio de no-localidad cuántica y las técnicas de visión remota protocolizada, la conciencia y el
+            campo bioenergético pueden ser escaneados con total nitidez a través de coordenadas precisas, sin que la
+            distancia en kilómetros afecte la calidad de la intervención.
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div
+          class="rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 overflow-hidden shadow-sm">
+          <button type="button"
+            class="faq-toggle w-full px-6 py-4.5 text-left font-serif text-lg sm:text-xl font-bold text-anahata-forest dark:text-anahata-cream flex items-center justify-between gap-4">
+            <span>¿Qué es la cirugía astral y qué sensaciones se experimentan?</span>
+            <i data-lucide="chevron-down"
+              class="faq-icon w-5 h-5 text-anahata-sand transition-transform duration-300"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed border-t border-anahata-forest/5 dark:border-anahata-emerald/10 pt-3">
+            Es la intervención y extirpación en el plano sutil de implantes energéticos, larvas parasitarias o desgarros
+            en la estructura áurica. Los consultantes suelen experimentar ligereza inmediata en el pecho o la cabeza,
+            alivio de opresiones y una profunda claridad mental sostenida.
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div
+          class="rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 overflow-hidden shadow-sm">
+          <button type="button"
+            class="faq-toggle w-full px-6 py-4.5 text-left font-serif text-lg sm:text-xl font-bold text-anahata-forest dark:text-anahata-cream flex items-center justify-between gap-4">
+            <span>¿Dónde y cuándo se transmiten los directos en vivo y anuncios?</span>
+            <i data-lucide="chevron-down"
+              class="faq-icon w-5 h-5 text-anahata-sand transition-transform duration-300"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed border-t border-anahata-forest/5 dark:border-anahata-emerald/10 pt-3">
+            Las transmisiones en directo se realizan a través de nuestra cuenta oficial de TikTok <a
+              href="https://www.tiktok.com/@centro_anahata?lang=es" target="_blank" rel="noopener noreferrer"
+              class="font-bold underline text-red-500 hover:text-red-600">@centro_anahata</a>, habitualmente los días
+            jueves y domingos a las 21:00 hrs (Chile). Las convocatorias de cupos 1 a 1 y avisos de talleres grupales se
+            publican tanto en TikTok como en nuestro canal directo de WhatsApp (+56 9 8770 9985).
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div
+          class="rounded-2xl bg-anahata-surface dark:bg-anahata-dark-card border border-anahata-forest/10 dark:border-anahata-emerald/20 overflow-hidden shadow-sm">
+          <button type="button"
+            class="faq-toggle w-full px-6 py-4.5 text-left font-serif text-lg sm:text-xl font-bold text-anahata-forest dark:text-anahata-cream flex items-center justify-between gap-4">
+            <span>¿Cómo se coordina y reserva el horario?</span>
+            <i data-lucide="chevron-down"
+              class="faq-icon w-5 h-5 text-anahata-sand transition-transform duration-300"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-anahata-forest/80 dark:text-anahata-cream/80 leading-relaxed border-t border-anahata-forest/5 dark:border-anahata-emerald/10 pt-3">
+            La coordinación se efectúa directamente a través del WhatsApp (+56 9 8770 9985) con Ana Castillo. Se realiza
+            una breve evaluación inicial de tu requerimiento y se fija la agenda en las fechas y horarios disponibles.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 10. FOOTER INSTITUCIONAL & MULTIMEDIA                     -->
+  <!-- ========================================================= -->
+  <footer
+    class="bg-anahata-forest text-anahata-cream dark:bg-anahata-dark border-t border-anahata-sand/20 py-16 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+
+        <!-- Identidad -->
+        <div class="md:col-span-4 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-full overflow-hidden border border-anahata-sand/50">
+              <img src="./assets/logo-anahata.jpg" alt="Centro Anahata Logo" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <span class="font-serif text-2xl font-bold text-anahata-cream block leading-tight">Centro Anahata</span>
+              <span class="text-xs uppercase tracking-widest text-anahata-sand font-medium">Ana Castillo ·
+                Instructora</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-anahata-cream/75 max-w-sm leading-relaxed">
+            Cuerpo · Mente · Alma | Soberanía Humana & Autogestión Mental y Sutil. Entrenamientos rigurosos libres de
+            dogmas y dependencias.
+          </p>
+          <p class="text-xs text-anahata-cream/60">
+            Unión 641, Villa Alemana, Región de Valparaíso, Chile.
+          </p>
+        </div>
+
+        <!-- Enlaces Rápidos -->
+        <div class="md:col-span-2 space-y-3">
+          <p class="text-xs font-bold uppercase tracking-widest text-anahata-sand">Navegación</p>
+          <ul class="space-y-2 text-xs sm:text-sm text-anahata-cream/80">
+            <li><a href="#inicio" class="hover:text-anahata-sand transition-colors">Inicio</a></li>
+            <li><a href="#habilidades" class="hover:text-anahata-sand transition-colors">Habilidades</a></li>
+            <li><a href="#formacion" class="hover:text-anahata-sand transition-colors">Formación</a></li>
+            <li><a href="#programas" class="hover:text-anahata-sand transition-colors">Programas</a></li>
+            <li><a href="#fechas" class="hover:text-anahata-sand transition-colors flex items-center gap-1.5">
+                <span>Fechas & Live</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+              </a></li>
+            <li><a href="#espacio" class="hover:text-anahata-sand transition-colors">Espacio & Sede</a></li>
+          </ul>
+        </div>
+
+        <!-- Multimedia & Transmisiones -->
+        <div class="md:col-span-3 space-y-3">
+          <p class="text-xs font-bold uppercase tracking-widest text-anahata-sand">Multimedia & En Vivo</p>
+          <div class="space-y-3 text-xs sm:text-sm text-anahata-cream/80">
+            <a href="https://www.tiktok.com/@centro_anahata?lang=es" target="_blank" rel="noopener noreferrer"
+              class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors group">
+              <svg class="w-5 h-5 fill-current text-[#EE1D52] group-hover:scale-110 transition-transform"
+                viewBox="0 0 24 24">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.46V12.9a8.16 8.16 0 0 0 5.73 2.29V11.7a4.84 4.84 0 0 1-3.77-1.78 4.82 4.82 0 0 1-1.23-3.23h5v-.01z" />
+              </svg>
+              <div>
+                <span class="font-bold text-white block">TikTok Oficial</span>
+                <span class="text-[11px] text-anahata-sand">@centro_anahata (Directos)</span>
+              </div>
+            </a>
+            <p class="text-[11px] text-anahata-cream/60">
+              Transmisiones semanales en vivo y cápsulas de soberanía cuántica.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contacto Directo -->
+        <div class="md:col-span-3 space-y-4">
+          <p class="text-xs font-bold uppercase tracking-widest text-anahata-sand">Atención & Agenda</p>
+          <div class="space-y-2 text-xs sm:text-sm text-anahata-cream/80">
+            <p class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-anahata-sand"></i>
+              <span>WhatsApp: +56 9 8770 9985</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-anahata-sand"></i>
+              <span>Villa Alemana, Chile</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="video" class="w-4 h-4 text-anahata-sand"></i>
+              <span>Google Meet internacional</span>
+            </p>
+          </div>
+          <div class="pt-1">
+            <a href="https://wa.me/56987709985?text=Hola%20Ana,%20me%20comunico%20desde%20el%20sitio%20web%20Centro%20Anahata"
+              target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold bg-anahata-sand text-anahata-forest hover:bg-white transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Escribir por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra de Copyright y Descargo -->
+      <div
+        class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-anahata-cream/60">
+        <p>© 2026 Centro Anahata – Ana Castillo. Todos los derechos reservados.</p>
+        <p class="text-center sm:text-right">Soberanía Humana · Biodecodificación · Visión Remota · TikTok
+          @centro_anahata</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- 10. BOTÓN FLOTANTE DE WHATSAPP CON PULSO SUAVE            -->
+  <!-- ========================================================= -->
+  <aside aria-label="Contacto Rápido" class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/56987709985?text=Hola%20Ana,%20me%20comunico%20desde%20tu%20sitio%20web%20Centro%20Anahata"
+      target="_blank" rel="noopener noreferrer" aria-label="Contactar a Ana Castillo por WhatsApp"
+      class="relative group flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300">
+
+      <!-- Efecto de onda / ping suave -->
+      <span
+        class="absolute inset-0 rounded-full bg-[#25D366] opacity-75 animate-ping group-hover:opacity-100 pointer-events-none"></span>
+
+      <!-- Icono WhatsApp SVG con diseño exacto -->
+      <svg class="w-8 h-8 fill-current relative z-10" viewBox="0 0 24 24">
+        <path
+          d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.073.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-10.416c-5.522 0-10 4.478-10 10 0 1.772.462 3.493 1.341 5.019l-1.425 5.215 5.344-1.402c1.471.802 3.129 1.224 4.74 1.224 5.522 0 10-4.478 10-10s-4.478-10-10-10z" />
+      </svg>
+
+      <!-- Tooltip Descriptivo al hacer Hover -->
+      <span
+        class="absolute right-full mr-3 px-3 py-1.5 rounded-xl bg-anahata-forest text-anahata-cream dark:bg-anahata-dark dark:text-anahata-sand border border-anahata-sand/30 text-xs font-semibold whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-300 shadow-xl hidden sm:block">
+        Hablar con Ana Castillo
+      </span>
+    </a>
+  </aside>
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT VANILLA: TEMA, MENÚ MOBILE, ACORDEÓN & LUCIDE   -->
+  <!-- ========================================================= -->
+  <script>
+    // Inicializar Iconos Lucide
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+    });
+
+    // -----------------------------------------------------------
+    // LÓGICA DE MODO CLARO / OSCURO (POR DEFECTO: MODO CLARO)
+    // -----------------------------------------------------------
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('theme-icon-sun');
+    const moonIcon = document.getElementById('theme-icon-moon');
+
+    function syncThemeUI(isDark) {
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        sunIcon.classList.remove('hidden');
+        sunIcon.classList.add('block');
+        moonIcon.classList.remove('block');
+        moonIcon.classList.add('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        sunIcon.classList.remove('block');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        moonIcon.classList.add('block');
+      }
+    }
+
+    // Inicializar estado según localStorage (default: claro)
+    const currentTheme = localStorage.getItem('anahata-theme');
+    syncThemeUI(currentTheme === 'dark');
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isCurrentlyDark = document.documentElement.classList.contains('dark');
+      const targetDark = !isCurrentlyDark;
+      localStorage.setItem('anahata-theme', targetDark ? 'dark' : 'light');
+      syncThemeUI(targetDark);
+      lucide.createIcons();
+    });
+
+    // -----------------------------------------------------------
+    // MENÚ MOBILE RESPONSIVE
+    // -----------------------------------------------------------
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // -----------------------------------------------------------
+    // ACORDEÓN DE PREGUNTAS FRECUENTES (FAQ)
+    // -----------------------------------------------------------
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.faq-icon');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Cerrar todos los demás
+        faqToggles.forEach(otherToggle => {
+          if (otherToggle !== toggle) {
+            otherToggle.nextElementSibling.classList.add('hidden');
+            const otherIcon = otherToggle.querySelector('.faq-icon');
+            if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+          }
+        });
+
+        // Alternar el actual
+        if (isOpen) {
+          content.classList.add('hidden');
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        } else {
+          content.classList.remove('hidden');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
